@@ -17,6 +17,8 @@ int toCylinderArea (double circumference) {
     printf("Please input the height of the Cylinder:\n");
     scanf("%lf", &cylinderHeight);
 
+    //  Probably faster to solve for circumference twice than radius twice
+
     double surfaceArea = (cylinderHeight * circumference) + (circumference * radius);
 
     printf("The surface area of the Cylinder is: %.3lf", surfaceArea);
@@ -49,4 +51,3 @@ int main () {
 
     return 0;
 }
-
